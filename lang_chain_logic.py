@@ -17,7 +17,7 @@ def langchain_answer(file, question: str) -> str:
         chunk_overlap=300
     )
     documents = text_splitter.split_documents(documents=documents)
-
+    
     embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
     vectorstore = FAISS.from_documents(documents, embeddings)
