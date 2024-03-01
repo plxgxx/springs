@@ -2,6 +2,10 @@
 
 So for completing the task I chose LangChain lib.
 
+## !API Key!
+Run `cp .env.example .env`, after that, insert your OpenAI api key into
+the variable
+
 ### Requirements and PiP manager
 Create virtual enviroment for this folder
 To install and make sure your system is compatible use `pip install -r requirements.txt`
